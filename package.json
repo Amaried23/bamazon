@@ -1,0 +1,14 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "store front ",
+  "main": "customer1.js",
+  "scripts": {
+    "test": "hi"
+  },
+  "author": "Alexis DeLucia",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^5.0.1"
+  }
+}
