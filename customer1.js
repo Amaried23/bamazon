@@ -48,7 +48,13 @@ function startPurchase() {
 	  }
 		]).then(function(answer) {
 
-			console.log(results[answer.choice - 1].product_name);
+
+			var chosenItem = results[answer.choice - 1].product_name;
+			var quantity = answer.quantityDesired;
+
+			console.log("You have purchased " + quantity + " " +  chosenItem);
+			//console.log(quantity);
+
 
 				
 			
