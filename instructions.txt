@@ -30,22 +30,6 @@ However, if your store does have enough of the product, you should fulfill the c
 This means updating the SQL database to reflect the remaining quantity.
 Once the update goes through, show the customer the total cost of their purchase.
 
-			var item = data.product_id;
-				var quantity = data.stock_quantity;
-
-   
-
-
-			var itemsAvailable = results.stock_quantity;
-			var newStock = (itemsAvailable - quantity);
-			var totalCost = (quantity * results.price)
-
-			 console.log(results[0].product_name);
-
-		// This condition checks whether or not the stock_quantity can meet quantity requested
-			if(quantity == newStock){
-				console.log("Yes We Have Enough!")
-   }
  
  });
  });
