@@ -18,7 +18,7 @@ connection.connect(function(err) {
 	console.log("Connected as id: "+connection.threadId);
 	queryAllProducts();
 
-})
+});
 
 // running through the list of all the products and information that is displayed in mysql and then displays them on the command line
 function queryAllProducts() {
@@ -53,15 +53,20 @@ function startPurchase() {
 			var quantity = answer.quantityDesired;
 
 			console.log("You have purchased " + quantity + " " +  chosenItem);
-			//console.log(quantity);
-
-
-				
+			//console.log(quantity);		
 			
+			// statement below is checking if quantity person entered is more than we have in stock order cannot
+			if(quantity > results[0].stock_quantity) {
+				console.log("sorry we dont have that amount in stock to fulfill that order");
+			}
+			else {
+				console.log("Your order will be shipped momentarily");
+			}
 		});
 
 	});
 };
+
 
 
 
