@@ -70,7 +70,10 @@ function startPurchase() {
 
 
 
+function updateDB ()  {
 
+	//here would be the code to update My SQL database
+}
 
 
 
